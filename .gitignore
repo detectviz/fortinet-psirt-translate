@@ -12,7 +12,9 @@ frontend/dist/
 
 # Data outputs
 *.log
-data/*.json
+data/translation_cache.json
+# Keep sample data for demo
+!data/advisories.json
 
 # Environment
 .env
