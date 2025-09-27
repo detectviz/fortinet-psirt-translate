@@ -1,0 +1,22 @@
+[project]
+name = "psirt-translate"
+version = "0.1.0"
+description = "Fortinet PSIRT advisory translator"
+requires-python = ">=3.10"
+dependencies = [
+    "feedparser>=6.0.11",
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.30.0",
+    "googletrans==4.0.0rc1",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+psirt-fetch = "psirt_translate.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
