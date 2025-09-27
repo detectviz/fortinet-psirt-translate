@@ -44,3 +44,35 @@ def export_advisories(file_name: Optional[str] = None):
     if not export_path.exists():
         raise HTTPException(status_code=500, detail="Export file not found")
     return FileResponse(export_path)
+
+
+@app.post("/api/technical-terms/reload")
+def reload_technical_terms():
+    """Reload technical terms from configuration file."""
+    success = service.reload_technical_terms()
+    if success:
+        count = service.get_technical_terms_count()
+        return {"message": f"Successfully reloaded {count} technical terms"}
+    else:
+        raise HTTPException(status_code=500, detail="Failed to reload technical terms")
+
+
+@app.post("/api/technical-terms/add")
+def add_technical_term(term: str):
+    """Add a custom technical term to prevent translation."""
+    if not term or not term.strip():
+        raise HTTPException(status_code=400, detail="Term cannot be empty")
+
+    term = term.strip()
+    success = service.add_custom_technical_term(term)
+    if success:
+        return {"message": f"Successfully added technical term: {term}"}
+    else:
+        raise HTTPException(status_code=400, detail=f"Term already exists or failed to add: {term}")
+
+
+@app.get("/api/technical-terms/count")
+def get_technical_terms_count():
+    """Get the count of loaded technical terms."""
+    count = service.get_technical_terms_count()
+    return {"count": count}

@@ -3,6 +3,9 @@ import { fetchAdvisories, triggerRefresh, downloadJson } from "./api/advisories"
 import type { Advisory } from "./types";
 import { AdvisoryCard } from "./components/AdvisoryCard";
 
+// 生產模式標記 - 在 GitHub Pages 等靜態環境中使用
+const IS_PRODUCTION = import.meta.env.PROD || import.meta.env.MODE === 'production';
+
 interface FetchState {
   items: Advisory[];
   loading: boolean;
@@ -75,14 +78,22 @@ export default function App() {
       <header className="page__header">
         <div>
           <h1>Fortinet PSIRT 公告翻譯器</h1>
-          <p className="page__subtitle">最新安全公告，自動翻譯與整理</p>
+          <p className="page__subtitle">
+            最新安全公告，自動翻譯與整理
+            {IS_PRODUCTION && <span className="demo-badge">DEMO</span>}
+          </p>
+          {IS_PRODUCTION && (
+            <p className="page__description">
+              📋 這是演示版本，顯示範例數據。如需完整功能，請參考 <a href="https://github.com/your-username/fortinet-psirt-translate" target="_blank" rel="noopener noreferrer">GitHub 專案</a> 自行部署。
+            </p>
+          )}
         </div>
         <div className="page__actions">
-          <button className="button" onClick={() => void reload(true)} disabled={loading}>
-            重新整理公告
+          <button className="button" onClick={() => void reload(true)} disabled={loading || IS_PRODUCTION}>
+            {IS_PRODUCTION ? "重新整理 (Demo)" : "重新整理公告"}
           </button>
           <button className="button button--primary" onClick={handleDownload}>
-            匯出為 JSON
+            {IS_PRODUCTION ? "下載範例 JSON" : "匯出為 JSON"}
           </button>
         </div>
       </header>
@@ -93,10 +104,13 @@ export default function App() {
           {loading && <span className="badge badge--info">資料載入中…</span>}
           {isRefreshing && <span className="badge badge--info">更新中…</span>}
           {error && <span className="badge badge--error">{error}</span>}
+          {IS_PRODUCTION && <span className="badge badge--warning">演示模式</span>}
         </div>
-        <button className="button button--ghost" onClick={handleRefresh} disabled={isRefreshing}>
-          從來源立即更新
-        </button>
+        {!IS_PRODUCTION && (
+          <button className="button button--ghost" onClick={handleRefresh} disabled={isRefreshing}>
+            從來源立即更新
+          </button>
+        )}
       </section>
 
       <main className="page__content">

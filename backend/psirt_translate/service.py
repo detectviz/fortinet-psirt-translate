@@ -57,3 +57,15 @@ class PSIRTService:
 
     def get_cached_advisories(self) -> List[dict]:
         return self.store.get_all()
+
+    def reload_technical_terms(self) -> bool:
+        """Reload technical terms from configuration file."""
+        return self.translator.reload_technical_terms()
+
+    def add_custom_technical_term(self, term: str) -> bool:
+        """Add a custom technical term to prevent translation."""
+        return self.translator.add_custom_term(term)
+
+    def get_technical_terms_count(self) -> int:
+        """Get the count of loaded technical terms."""
+        return len(self.translator._technical_terms) if hasattr(self.translator, '_technical_terms') else 0
