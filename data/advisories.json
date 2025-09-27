@@ -1,0 +1,182 @@
+[
+  {
+    "title_en": "RADIUS Protocol CVE-2024-3596",
+    "title_zh": "RADIUS協議CVE -2024-3596",
+    "summary_en": "A fundamental design flaw within the RADIUS protocol has been proven to be exploitable, compromising the integrity in the RADIUS Access-Request process. The attack allows a malicious user to modify packets in a way that would be indistinguishable to a RADIUS client or server. To be successful, the attacker must have the ability to inject themselves between the client and server. Revised on 2025-07-10 00:00:00",
+    "summary_zh": "RADIUS協議中的一個基本設計缺陷已被證明是可利用的，這會損害RADIUS訪問過程中的完整性。該攻擊允許惡意用戶以RADIUS客戶端或服務器無法區分的方式修改數據包。為了取得成功，攻擊者必須能夠在客戶端和服務器之間注入自己。修訂於2025-07-10 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-24-255",
+    "published": "Tue, 13 Aug 2024 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-24-255"
+  },
+  {
+    "title_en": "Arbitrary file overwrite in FGFMd",
+    "title_zh": "在FGFMd中的任意文件覆蓋",
+    "summary_en": "An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability [CWE-22] in FortiManager & FortiManager Cloud may allow an authenticated remote attacker to overwrite arbitrary files via FGFM crafted requests. Revised on 2025-08-13 00:00:00",
+    "summary_zh": "對路徑名的不當限制對[FortiManager和FortiManager和FortiManager Cloud中的限制目錄（'Path traversal'）漏洞[CWE -22]可能允許經過身份驗證的遠程攻擊者通過FGFM精心設計的請求來覆蓋任意文件。修訂於2025-08-13 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-24-473",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-24-473"
+  },
+  {
+    "title_en": "Path traversal vulnerability in CLI",
+    "title_zh": "CLI中的路徑遍歷漏洞",
+    "summary_en": "Multiple relative path traversal vulnerabilities [CWE-23] in FortiMail, FortiVoice, FortiRecorder, FortiCamera & FortiNDR may allow a privileged attacker to read files from the underlying filesystem via crafted CLI requests.  Revised on 2025-08-13 00:00:00",
+    "summary_zh": "Multiple relative path traversal vulnerabilities [CWE-23] in FortiMail, FortiVoice, FortiRecorder, FortiCamera & FortiNDR may allow a privileged attacker to read files from the underlying filesystem via crafted CLI requests.  修訂於2025-08-13 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-24-309",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-24-309"
+  },
+  {
+    "title_en": "Authentication bypass via invalid parameter",
+    "title_zh": "通過無效參數的身份驗證旁路",
+    "summary_en": "An improper handling of parameters [CWE-233] vulnerability in FortiWeb may allow an unauthenticated remote attacker in possession of non-public information (pertaining to both the device and to the targeted user) to log in as any existing user on the device via a specially crafted request.  Revised on 2025-08-12 00:00:00",
+    "summary_zh": "[FortiWeb中的參數[CWE -233]漏洞的處理不當可能允許使用非公開信息（與設備和目標用戶有關），通過專門精心設計的請求，擁有非公開信息（與設備和目標用戶有關）作為在設備上的任何現有用戶登錄。  修訂於2025-08-12 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-25-448",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-25-448"
+  },
+  {
+    "title_en": "Command injection in CLI",
+    "title_zh": "CLI中的命令注入",
+    "summary_en": "An improper neutralization of special elements used in an OS command ('OS Command Injection') vulnerability [CWE-78] in FortiWeb may allow an authenticated privileged attacker to execute unauthorized code or commands via crafted CLI commands Revised on 2025-08-12 00:00:00",
+    "summary_zh": "在FortiWeb中使用OS命令（“ OS命令注入”）漏洞[CWE -78]中使用的特殊元素的不當中和可能允許經過驗證的特權攻擊者通過精心設計的CLI命令在2025-08-12 00:00:00:00:00:00:00上執行未經授權的代碼或命令",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-25-150",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-25-150"
+  },
+  {
+    "title_en": "Command injection in CLI command",
+    "title_zh": "CLI命令中的命令注入",
+    "summary_en": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability [CWE-78] in FortiWeb CLI may allow a privileged attacker to execute arbitrary code or command via crafted CLI commands. Revised on 2025-08-12 00:00:00",
+    "summary_zh": "在FortiWeb CLI中使用OS命令（“ OS命令注入”）漏洞[CWE -78]中使用的特殊元素的中和不當中和。修訂於2025-08-12 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-25-253",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-25-253"
+  },
+  {
+    "title_en": "Double free in automation-stitch",
+    "title_zh": "自動縫雙免費",
+    "summary_en": "A double free vulnerability [CWE-415] in FortiOS, FortiProxy & FortiPAM administrative interfaces may allow a privileged attacker to execute code or commands via crafted HTTP or HTTPs requests. Revised on 2025-08-12 00:00:00",
+    "summary_zh": "Fortios，FortiProxy和FortiPAM的雙重自由漏洞[CWE -415]可能允許特權攻擊者通過精心設計的HTTP或HTTPs請求執行代碼或命令。修訂於2025-08-12 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-23-209",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-23-209"
+  },
+  {
+    "title_en": "Incorrect Privilege Assignment in Security Fabric",
+    "title_zh": "安全結構中的不正確特權分配",
+    "summary_en": "An incorrect privilege assignment vulnerability [CWE-266] in FortiOS Security Fabric may allow a remote authenticated attacker with high privileges to escalate their privileges to super-admin via registering the device to a malicious FortiManager.  Revised on 2025-08-12 00:00:00",
+    "summary_zh": "Fortios安全結構中的不正確特權分配漏洞[CWE -266]可能會允許具有高特權的遠程身份驗證攻擊者通過將設備註冊為惡意FortiManager，從而將其特權升級為超級應用程序。  修訂於2025-08-12 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-25-173",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-25-173"
+  },
+  {
+    "title_en": "Integer Overflow on SSL-VPN bookmarks",
+    "title_zh": "SSL上的整數溢出 -  VPN書籤",
+    "summary_en": "An Integer Overflow or Wraparound vulnerability [CWE-190] in FortiOS, FortiPAM and FortiProxy SSL-VPN RDP and VNC bookmarks may allow an authenticated user to affect the device SSL-VPN availability via crafted requests. Revised on 2025-08-12 00:00:00",
+    "summary_zh": "fortios，FortiPAM和FortiProxy FortiProxy SSL  -  VPN RDP和VNC書籤可能允許經過驗證的用戶可以影響設備SSL  -  SSL  -  VPN的可用性。修訂於2025-08-12 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-24-364",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-24-364"
+  },
+  {
+    "title_en": "OS command injections via GET request parameter",
+    "title_zh": "通過獲取請求參數注射OS命令",
+    "summary_en": "An improper neutralization of special elements used in an OS Command ('OS Command Injection') vulnerability [CWE-78] in FortiADC may allow a remote and authenticated attacker with low privilege to execute unauthorized code via specifically crafted HTTP parameters. Revised on 2025-08-12 00:00:00",
+    "summary_zh": "在FortiADC中使用OS命令（“ OS命令注入”）漏洞[CWE -78]中使用的特殊元素的不當中和，可以允許具有低特權的遠程和身份驗證的攻擊者通過專門製作的HTTP參數執行未經授權的代碼。修訂於2025-08-12 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-25-501",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-25-501"
+  },
+  {
+    "title_en": "Path traversal in Solution Pack upload",
+    "title_zh": "解決方案包裝中的路徑遍歷上傳",
+    "summary_en": "A relative path traversal vulnerability [CWE-23] in FortiSOAR may allow an authenticated attacker to read arbitrary files via uploading a malicious solution pack. Revised on 2025-08-12 00:00:00",
+    "summary_zh": "FortiSOAR中的相對路徑遍歷漏洞[CWE -23]可以允許身份驗證的攻擊者通過上傳惡意解決方案包讀取任意文件。修訂於2025-08-12 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-24-421",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-24-421"
+  },
+  {
+    "title_en": "Remote unauthenticated command injection",
+    "title_zh": "遠程未經驗證的命令注入",
+    "summary_en": "An improper neutralization of special elements used in an OS command ('OS Command Injection') vulnerability [CWE-78] in FortiSIEM may allow an unauthenticated attacker to execute unauthorized code or commands via crafted CLI requests.Practical exploit code for this vulnerability was found in the wild. Revised on 2025-08-12 00:00:00",
+    "summary_zh": "在FortiSIEM中使用OS命令（“ OS命令注入”）漏洞[CWE -78]中使用的特殊元素的不當中和可能允許未經驗證的攻擊者通過精心設計的代碼或命令執行未經授權的代碼或命令CLI requests.s.s.practical requests.s. practical opplloit代碼。修訂於2025-08-12 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-25-152",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-25-152"
+  },
+  {
+    "title_en": "Stack buffer overflow in CLI command",
+    "title_zh": "CLI命令中的堆棧緩衝區溢出",
+    "summary_en": "A stack-based buffer overflow vulnerability [CWE-121] in FortiWeb CLI may allow a privileged attacker to execute arbitrary code or commands via crafted CLI commands Revised on 2025-08-12 00:00:00",
+    "summary_zh": "FortiWeb CLI中的基於堆棧的緩衝區溢出漏洞[CWE -121]可能允許特權攻擊者通過精心設計的CLI命令在2025-08-12 0008-12 00:00:00：",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-25-383",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-25-383"
+  },
+  {
+    "title_en": "Weak authentication - FGFM protocol",
+    "title_zh": "弱身份驗證 -  FGFM協議",
+    "summary_en": "An authentication bypass using an alternate path or channel [CWE-288] vulnerability in FortiOS, FortiProxy & FortiPAM may allow an unauthenticated attacker to seize control of a managed device via crafted FGFM requests, if the device is managed by a FortiManager, and if the attacker knows that FortiManager's serial number. Revised on 2025-08-12 00:00:00",
+    "summary_zh": "使用替代路徑或通道[CWE -288] fortios，FortiProxy＆FortiPAM的身份驗證途徑可能會允許未經身分的攻擊者通過精心設計的FGFM請求來抓住對託管設備的控制，如果設備由A FortiManager管理，並且如果攻擊者知道攻擊者，則知道[Techer_____________5]。修訂於2025-08-12 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-24-042",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-24-042"
+  },
+  {
+    "title_en": "XSS in service requests",
+    "title_zh": "XSS在服務請求中",
+    "summary_en": "An Improper neutralization of input during web page generation ('cross-site scripting') vulnerability [CWE-79] in FortiSOAR WEB UI may allow an authenticated remote attacker to perform an XSS attack via stored malicious service requests Revised on 2025-08-12 00:00:00",
+    "summary_zh": "網頁生成期間的輸入不當（“跨站點腳本”）漏洞[CWE -79] FortiSOAR Web UI中可能允許經過身份驗證的遠程攻擊者通過在2025-08-12 00:00:00:00：00:00:00:00上進行的儲存惡意服務請求執行XSS攻擊XSS",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-24-513",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-24-513"
+  },
+  {
+    "title_en": "Pre-authentication Denial of Service attack in OpenSSH - CVE-2025-26466",
+    "title_zh": "在Openssh進行預授權拒絕服務攻擊 -  CVE -2025-26466",
+    "summary_en": "CVE-2025-26466A flaw was found in the OpenSSH package. For each ping packet the SSH server receives, a pong packet is allocated in a memory buffer and stored in a queue of packages. It is only freed when the server/client key exchange has finished. A malicious client may keep sending such packages, leading to an uncontrolled increase in memory consumption on the server side. Consequently, the server may become unavailable, resulting in a denial of service attack. Revised on 2025-07-30 00:00:00",
+    "summary_zh": "CVE -2025-26466a在OpenSSH軟件包中發現了缺陷。對於SSH服務器都會收到的每個Ping數據包，將乒乓數據包分配在存儲器緩衝區中，並存儲在包裝中。只有在服務器/客戶端密鑰交換完成後才釋放。惡意客戶端可能會繼續發送此類軟件包，從而導致服務器端的內存消耗不受控制。因此，服務器可能無法使用，導致拒絕服務攻擊。修訂於2025-07-30 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-25-122",
+    "published": "Tue, 11 Mar 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-25-122"
+  },
+  {
+    "title_en": "OS command injection in CLI",
+    "title_zh": "OS命令注入CLI",
+    "summary_en": "An improper neutralization of special elements used in an OS command ('OS Command Injection') vulnerability [CWE-78] in FortiDDoS-F CLI may allow a privileged attacker to execute unauthorized code or commands via crafted CLI requests. Revised on 2025-09-09 00:00:00",
+    "summary_zh": "在FortiDDoS -f CLI中使用OS命令（'OS命令注入'）漏洞[CWE -78]中使用的特殊元素的中和不當中和。修訂於2025-09-09 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-24-344",
+    "published": "Tue, 09 Sep 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-24-344"
+  },
+  {
+    "title_en": "Path traversal in policy scripting",
+    "title_zh": "策略腳本中的路徑遍歷",
+    "summary_en": "A Relative Path Traversal vulnerability [CWE-23] in FortiWeb may allow an authenticated attacker to perform an arbitrary file read on the underlying system via crafted requests. Revised on 2025-09-09 00:00:00",
+    "summary_zh": "FortiWeb中的相對路徑遍歷漏洞[CWE -23]可以允許身份驗證的攻擊者通過精心設計的請求在基礎系統上讀取任意文件。修訂於2025-09-09 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-25-512",
+    "published": "Tue, 09 Sep 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-25-512"
+  },
+  {
+    "title_en": "Unauthenticated SQL injection in GUI",
+    "title_zh": "GUI中未經身份驗證的SQL注射",
+    "summary_en": "An improper neutralization of special elements used in an SQL command ('SQL Injection') vulnerability [CWE-89] in FortiWeb may allow an unauthenticated attacker to execute unauthorized SQL code or commands via crafted HTTP or HTTPs requests.Fortinet has observed this to be exploited in the wild on FortiWeb. Revised on 2025-07-18 00:00:00",
+    "summary_zh": "An improper neutralization of special elements used in an SQL command ('SQL Injection') vulnerability [CWE-89] in FortiWeb may allow an unauthenticated attacker to execute unauthorized SQL code or commands via crafted HTTP or HTTPs requests.Fortinet has observed this to be exploited in the wild on FortiWeb.修訂於2025-07-18 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-25-151",
+    "published": "Tue, 08 Jul 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-25-151"
+  },
+  {
+    "title_en": "SQL injection in forward module",
+    "title_zh": "SQL向前模塊注入",
+    "summary_en": "An Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability [CWE-89] in FortiManager and FortiAnalyzer may allow an authenticated attacker with high privilege to extract database information via crafted requests. Revised on 2025-07-09 00:00:00",
+    "summary_zh": "SQL命令（'SQL注入'）漏洞[CWE -89]和FortiManager和FortiManager和FortiAnalyzer中使用的特殊元素的不當中和化可能允許具有高度特權的經過驗證的攻擊者通過精心設計的請求來提取數據庫信息。修訂於2025-07-09 00:00:00",
+    "link": "https://fortiguard.fortinet.com/psirt/FG-IR-24-437",
+    "published": "Tue, 08 Jul 2025 00:00:00 -0700",
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-24-437"
+  }
+]
